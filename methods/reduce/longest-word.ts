@@ -4,11 +4,13 @@
  * => “grapefruit”
  */
 
-let words = ["apple", "banana", "orange", "grapefruit", "kiwi", "mango", "tangerine", "watermelon", "papaya", "passionfruit"];
+import { words } from "../../data/words";
 
-let longestWord = words.reduce((accumulator, word) => {
-    if (word.length > accumulator.length) {
-        return word;
+let fruitArray = ["apple", "banana", "orange", "grapefruit", "kiwi", "mango", "tangerine", "watermelon", "papaya", "passionfruit"];
+
+let longestWord = fruitArray.reduce((accumulator, fruit) => {
+    if (fruit.length > accumulator.length) {
+        return fruit;
     } else {
         return accumulator;
     }
@@ -16,3 +18,13 @@ let longestWord = words.reduce((accumulator, word) => {
 
 console.log(longestWord);
 // run with: npx ts-node methods/reduce/longest-word.ts
+
+const newArray = {} as any;
+newArray.extended = fruitArray.concat(words);
+newArray.words = [...fruitArray];
+newArray.longestWord = longestWord;
+
+
+console.log(newArray);
+
+
