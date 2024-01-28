@@ -35,3 +35,4 @@ In the end, `sum` will be `15`, which is the total of all the numbers in the arr
 ### Why is it powerful?
 
 `reduce` is versatile. You can use it to transform an array into literally anything: a number (like a sum), an object (like a frequency map), another array (perhaps filtered or mapped in some way), etc. It's a tool that, once understood, can simplify many complex data transformations.
+
