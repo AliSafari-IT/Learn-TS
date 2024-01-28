@@ -18,13 +18,13 @@
 }
  */
 
-let fruits = ["watermelon", "banana", "orange", "grapefruit", "apple", "banana", "orange", "grapefruit", "watermelon", "apple", "banana", "grapefruit", "kiwi", "passionfruit"];
+let data = ["watermelon", "banana", "orange", "grapefruit", "apple", "banana", "orange", "grapefruit", "watermelon", "apple", "banana", "grapefruit", "kiwi", "passionfruit"];
 
 interface Frequencies {
     [key: string]: number
 }
 
-let frequencies = fruits.reduce((accumulator, fruit) => {
+let frequencies = data.reduce((accumulator, fruit) => {
     if (!accumulator.has(fruit)) {
         accumulator.set(fruit, 1);
     } else {
