@@ -1,3 +1,10 @@
+/**
+ * Implemented a new feature to calculate and display a summary of sales data. 
+ * This includes the total count of items sold and the total sales amount for each product. 
+ * The calculation is done using the reduce method in TypeScript, providing a clear and 
+ * efficient data aggregation from an array of sales transactions.
+
+ */
 interface Sale {
     product: string;
     amount: number;
