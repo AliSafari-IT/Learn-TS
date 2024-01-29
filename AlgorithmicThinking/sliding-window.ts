@@ -48,3 +48,16 @@ slidingWindowSumLessThanTarget(input, targetValue);
 slidingWindowSumLessThanTarget(input, targetValue, false);
 
 // run with: npx ts-node Learn\Learn-TS\AlgorithmicThinking\sliding-window.ts
+// input = [2, 7, 11, 15, -20, 14, 2, 11, 10]
+// Output for isLessThan = true:
+// { 'All possible subarrays:': [ [ 2, 7, 11, 15 ], [ 14, 2, 11, 10 ] ] }
+// {
+//   'Shortest subarray:': [ 2, 7, 11, 15 ],
+//   case: 'whose sum is less than the target value'
+// }
+// Output for isLessThan = false:
+// { 'All possible subarrays:': [ [ 2, 7, 11 ], [ -20, 14, 2, 11, 10 ] ] }
+// {
+//   'Shortest subarray:': [ 2, 7, 11 ],
+//   case: 'whose sum is greater than or equal to the target value'
+// }
