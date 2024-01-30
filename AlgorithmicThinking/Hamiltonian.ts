@@ -1,3 +1,4 @@
+// Function to find all Hamiltonian paths
 
 function findAllHamiltonianPaths(nums: number[]): number[][] {
     // Function to swap elements in the array
