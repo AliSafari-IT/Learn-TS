@@ -17,3 +17,20 @@ This problem is challenging because it requires a dynamic programming approach t
 Given a set of cities and the distances between each pair of cities, the traveling salesperson problem is to find the shortest possible route that visits each city exactly once and returns to the starting city.
 
 This problem is notoriously difficult and is considered to be one of the most challenging problems in computer science. A solution to this problem will involve a combination of approximation algorithms and heuristics.
+
+### Travelling Salesperson Algorithm
+
+As the definition for greedy approach states, we need to find the best optimal solution locally to figure out the global optimal solution. The inputs taken by the algorithm are the graph G {V, E}, where V is the set of vertices and E is the set of edges. The shortest path of graph G starting from one vertex returning to the same vertex is obtained as the output.
+
+- Travelling salesman problem takes a graph G {V, E} as an input and declare another graph as the output (say G’) which will record the path the salesman is going to take from one node to another.
+
+- The algorithm begins by sorting all the edges in the input graph G from the least distance to the largest distance.
+
+- The first edge selected is the edge with least distance, and one of the two vertices (say A and B) being the origin node (say A).
+
+- Then among the adjacent edges of the node other than the origin node (B), find the least cost edge and add it onto the output graph.
+
+- Continue the process with further nodes making sure there are no cycles in the output graph and the path reaches back to the origin node A.
+
+- However, if the origin is mentioned in the given problem, then the solution must always start from that node only. 
+- 
