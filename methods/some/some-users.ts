@@ -1,4 +1,4 @@
-import { User, users } from "../../data/users";
+import { User, users } from "../../resources/data/users";
 
 /**
  * Scenario: Checking User Access Based on Roles and Conditions

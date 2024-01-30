@@ -1,5 +1,11 @@
 // Graphs in TypeScript: https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)
 
+/**
+ * Graph class that represents an undirected graph.
+ * This Graph class stores the nodes of the graph, 
+ * the adjacency matrix, and methods for getting 
+ * the neighbors of a node.
+ */
 class Graph {
     /**
      * Graph is represented as an adjacency list.
@@ -21,7 +27,7 @@ class Graph {
      * to the same vertex is obtained as the output.
      */
     public graph: { [key: string]: string[]; };
-
+    public adjacentMatrix: number[][] = [];
     constructor() {
         this.graph = {};
     }
@@ -36,6 +42,24 @@ class Graph {
         } else {
             console.error("Invalid input for edge:", u, v);
         }
+    }
+
+    public getNodes(): string[] {
+        return this.graph ? Object.keys(this.graph) : [];
+    }
+
+    public getAdjacentMatrix(): number[][] {
+        return this.adjacentMatrix;
+    }
+
+    public getNodeNeighbors(node: number): number[] {
+        const neighbors: number[] = [];
+        for (let i = 0; i < this.graph[node].length; i++) {
+            if (this.adjacentMatrix[node][i] > 0) {
+                neighbors.push(i);
+            }
+        }
+        return neighbors;
     }
 
     public printGraph(): void {

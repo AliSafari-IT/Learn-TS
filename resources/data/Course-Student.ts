@@ -1,4 +1,4 @@
-import { getRandomMark } from "./getRandom";
+import { getRandomMark } from "../tools/getRandom";
 
 export interface Student {
     id: number;

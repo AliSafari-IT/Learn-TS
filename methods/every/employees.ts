@@ -1,4 +1,4 @@
-import { Employee, employees } from "../../data/employees";
+import { Employee, employees } from "../../resources/data/employees";
 
 /**
  * Problem: Employee Eligibility for a Special Project

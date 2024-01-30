@@ -40,6 +40,11 @@ As the definition for greedy approach states, we need to find the best optimal s
 
 Dijkstra's algorithm is an iterative algorithm used to find the shortest path between a source node and all other nodes in a weighted graph. It works by maintaining a priority queue of nodes, where each node is associated with its current distance from the source node. The algorithm iteratively removes the node with the smallest distance from the queue, adds it to a set of visited nodes, and then updates the distances of its unvisited neighbors.
 
+<!-- 
+![Dijkstra's algorithm runtime](../resources/img/Dijkstra_Animation.gif) 
+-->
+<img src="../resources/img/Dijkstra_Animation.gif" width="500" alt="Dijkstra's algorithm runtime">
+
 #### Challenge
 
 - Implement the Dijkstra algorithm for finding the shortest path between two nodes in a weighted graph in TypeScript.

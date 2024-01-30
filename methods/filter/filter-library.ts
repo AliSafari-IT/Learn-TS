@@ -20,7 +20,7 @@ Requirements:
     3.  Use the filter() method to achieve the filtering based on the given criteria.
  */
 
-import { Book, bestSellerBooks, hydrologyBooks, psychologyBooks } from "../../data/library";
+import { Book, bestSellerBooks, hydrologyBooks, psychologyBooks } from "../../resources/data/library";
 
     function filterByBooksGenre(books: Book[], genre: string, year?: number): Book[] {
         const filtered = books.filter((book) => book.genres.includes(genre));

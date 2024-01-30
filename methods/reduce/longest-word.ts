@@ -4,7 +4,7 @@
  * => “grapefruit”
  */
 
-import { words } from "../../data/words";
+import { words } from "../../resources/data/words";
 
 let fruitArray = ["apple", "banana", "orange", "grapefruit", "kiwi", "mango", "tangerine", "watermelon", "papaya", "passionfruit"];
 
