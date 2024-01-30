@@ -25,9 +25,9 @@ function findShortestPath(): void {
     // Calculate the total distance of the shortest path
     let totalDistance = 0;
     for (let i = 0; i < CITIES.length - 1; i++) {
-        totalDistance += calculateDistance(CITIES[i], CITIES[i + 1]);
+        totalDistance += calculateDistance({ city1: CITIES[i], city2: CITIES[i + 1] });
     }
-    totalDistance += calculateDistance(CITIES[CITIES.length - 1], CITIES[0]);
+    totalDistance += calculateDistance({ city1: CITIES[CITIES.length - 1], city2: CITIES[0] });
 
     // Print the shortest path
     console.log('Shortest path:', CITIES);
@@ -35,7 +35,7 @@ function findShortestPath(): void {
 }
 
 // Function to calculate the distance between two cities
-function calculateDistance(city1: string, city2: string): number {
+function calculateDistance({ city1, city2 }: { city1: string; city2: string; }): number {
     
     // Find the index of the cities in the CITIES array
     const index1 = CITIES.indexOf(city1);

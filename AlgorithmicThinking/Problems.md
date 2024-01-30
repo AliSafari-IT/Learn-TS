@@ -12,13 +12,15 @@ Given a set of items with weights and values, the knapsack problem is to find th
 
 This problem is challenging because it requires a dynamic programming approach to efficiently solve the problem for large sets of items. A solution to this problem will involve breaking down the problem into smaller subproblems, and then using the solutions to these subproblems to solve the larger problem.
 
-## **Problem 3: The Traveling Salesperson Problem**
+### Travelling Salesperson Algorithm
+
+This is the Travelling Salesperson Algorithm, which aims to find the most efficient route for a salesperson to travel to a set of destinations.
+
+#### Challenge
 
 Given a set of cities and the distances between each pair of cities, the traveling salesperson problem is to find the shortest possible route that visits each city exactly once and returns to the starting city.
 
 This problem is notoriously difficult and is considered to be one of the most challenging problems in computer science. A solution to this problem will involve a combination of approximation algorithms and heuristics.
-
-### Travelling Salesperson Algorithm
 
 As the definition for greedy approach states, we need to find the best optimal solution locally to figure out the global optimal solution. The inputs taken by the algorithm are the graph G {V, E}, where V is the set of vertices and E is the set of edges. The shortest path of graph G starting from one vertex returning to the same vertex is obtained as the output.
 
@@ -32,5 +34,23 @@ As the definition for greedy approach states, we need to find the best optimal s
 
 - Continue the process with further nodes making sure there are no cycles in the output graph and the path reaches back to the origin node A.
 
-- However, if the origin is mentioned in the given problem, then the solution must always start from that node only. 
-- 
+- However, if the origin is mentioned in the given problem, then the solution must always start from that node only.
+
+### Dijkstra's Algorithm
+
+Dijkstra's algorithm is an iterative algorithm used to find the shortest path between a source node and all other nodes in a weighted graph. It works by maintaining a priority queue of nodes, where each node is associated with its current distance from the source node. The algorithm iteratively removes the node with the smallest distance from the queue, adds it to a set of visited nodes, and then updates the distances of its unvisited neighbors.
+
+#### Challenge
+
+- Implement the Dijkstra algorithm for finding the shortest path between two nodes in a weighted graph in TypeScript.
+- Consider different graph representations, such as an adjacency matrix or an adjacency list.
+- Optimize your implementation for efficiency.
+
+This problem will help you learn about:
+
+- Graph theory and algorithms
+- Data structures for graphs
+- Iterative algorithms and dynamic programming
+- Efficiency and optimization techniques
+
+By solving this problem, you will gain a deeper understanding of graph algorithms and develop your problem-solving skills.
