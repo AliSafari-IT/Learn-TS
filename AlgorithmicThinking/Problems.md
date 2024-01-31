@@ -36,13 +36,10 @@ As the definition for greedy approach states, we need to find the best optimal s
 
 - However, if the origin is mentioned in the given problem, then the solution must always start from that node only.
 
-### Dijkstra's Algorithm
+## Dijkstra's algorithm (Reference: [Wikipedia](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm))
 
 Dijkstra's algorithm is an iterative algorithm used to find the shortest path between a source node and all other nodes in a weighted graph. It works by maintaining a priority queue of nodes, where each node is associated with its current distance from the source node. The algorithm iteratively removes the node with the smallest distance from the queue, adds it to a set of visited nodes, and then updates the distances of its unvisited neighbors.
 
-<!-- 
-![Dijkstra's algorithm runtime](../resources/img/Dijkstra_Animation.gif) 
--->
 <img src="../resources/img/Dijkstra_Animation.gif" width="500" alt="Dijkstra's algorithm runtime">
 
 #### Challenge
@@ -59,3 +56,19 @@ This problem will help you learn about:
 - Efficiency and optimization techniques
 
 By solving this problem, you will gain a deeper understanding of graph algorithms and develop your problem-solving skills.
+
+### Let's learn via solving 3 scenarios
+
+**Problem:** Dijkstra's algorithm is used for finding the shortest path between two nodes in a graph:
+
+- **Case 1:** Find the shortest path between two nodes in a graph while visiting Aalst and all its neighboring cities.
+  
+- **Case 2:** Find the shortest path between two nodes in a graph while visiting all the graph cities and their corresponding adjacent cities given in their neighbors list.
+  
+- **Case 3:** yet to be formulated for this problem with an original scenario.
+
+To learn:
+
+- Basic Graph Concepts (a quick review).
+- What Dijkstra's Algorithm is used for.
+- How it works behind the scenes with a step-by-step example.
