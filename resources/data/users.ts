@@ -19,3 +19,7 @@ export const users: User[] = [
     { name: 'Kate', roles: ['editor', 'contributor'], status: 'active' },
     { name: 'Liam', roles: ['contributor'], status: 'inactive' },
 ];
+
+// TODO: Add example to try every() and map():
+
+// 

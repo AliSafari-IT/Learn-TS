@@ -1,4 +1,4 @@
-import { fruits as data} from "../../data/fruits";
+import { fruits as data} from "../../resources/data/fruits";
 /**
  * create a TypeScript script that demonstrates advanced array manipulation techniques? 
  * I'd like to see a script that imports an array of fruits, randomly selects a subset of 

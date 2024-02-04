@@ -1,4 +1,4 @@
-import { fruits } from "../../data/fruits";
+import { fruits } from "../../resources/data/fruits";
 
 let data = fruits;
 
