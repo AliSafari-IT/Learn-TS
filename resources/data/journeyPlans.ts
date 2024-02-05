@@ -34,8 +34,6 @@ export const journeyPlan1: City[] = [
   }
 ];
 
-console.log('CitiesLength: ' + cities.length);
-
 // 5 Solo Adventures Cities
 export const soloAdventuresCities: string[] = ['Zottegem', 'Haaltert', 'Geraardsbergen', 'Lede', 'Sint-Lievens-Houtem'];
 
@@ -96,8 +94,5 @@ while (belgiumTripCities.length < 7) {
   cities.length > 0 ? cities.splice(cities.indexOf(randomCity), 1) : null;
   belgiumTripCities.push(randomCity);
 }
-
-console.log('CitiesLength: ' + cities.length);
-console.log(belgiumTripCities);
 
 // run with: npx ts-node resources\data\journeyPlans.ts
