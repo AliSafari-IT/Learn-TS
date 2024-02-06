@@ -1,5 +1,10 @@
-// Graph to demonstrate cities and distances used for Dijkstra's algorithm
-class City {
+export interface OutputObject {
+    visitedCities: City[];
+    sum: number;
+  }
+  
+  // Graph to demonstrate cities and distances used for Dijkstra's algorithm
+export class City {
     public name: string;
     public rowIndex: number;
     public columnIndex: number;
@@ -12,4 +17,7 @@ class City {
     }
 }
 
-export default City;
+export interface ParentChildren {
+    parent: string;
+    children: string[];
+}

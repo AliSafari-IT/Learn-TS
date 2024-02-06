@@ -1,5 +1,18 @@
-import City from "./City";
+import {City} from "../interfaces";
 import { cities } from "./cities";
+
+export const startNode: City = {
+  name: "StartNode",
+  rowIndex: 0,
+  columnIndex: 0,
+  neighbors: [],
+};
+export const finishNode: City = {
+  name: "FinishNode",
+  rowIndex: 0,
+  columnIndex: 0,
+  neighbors: [],
+};
 
 export const journeyPlan1: City[] = [
   {

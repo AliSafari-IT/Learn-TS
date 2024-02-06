@@ -1,4 +1,4 @@
-import City from "./City";
+import {City} from "../interfaces";
 
 export const cities: City[] = [
     {
